@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="framework.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <body id="page" background="Picnic.jpg">
+
+      <style>
+        .subtitle{
+        font-family: 'Liu Jian Mao Cao', cursive;
+      }
+      </style>
+
+      <div class="container is-fluid" id="content">
+          
+<section data-section-id="1" data-component-id="29e6_2_02_awz" data-category="headers" class="hero"><div class="hero-body">
+  <div class="container has-text-centered">
+
+    <h1 class="subtitle is-1" data-config-id="header">Meal Finder</h1>
+  </div>
+</div>
+</section>
+<div id="Main">
+
+    <div class="tile is-ancestor">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary">
+
+                <!-- This is the ingredients box -->
+                <p class="title">Ingredients</p>
+                <p class="title is-5">Let's get started!</p>
+                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="Text input">
+                <button type="button" id="find">Find me a meal!</button>
+              </article>
+
+              <article class="tile is-child notification is-warning">
+                <p class="title">Missing ingredients</p>
+                <p class="title is-5">You're so close!</p>
+
+                <!-- This is a list box -->
+                <div id="myDIV" class="header">
+                  <h2>My To Do List</h2>
+                  <input type="text" id="myInput" placeholder="Title...">
+                  <span onclick="newElement()" class="addBtn" >Add</span>
+                </div>
+                <ul id="myUL"></ul>
+
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-info">
+                <p class="title">Image</p>
+                <p class="title is-5">This is what you can expect!</p>
+                <figure class="image is-4by3">
+                  <img id="recipe-image" alt="What your meal will look like!">
+                </figure>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+              <p class="title">Map</p>
+              <p class="title is-5">To get what your missing!</p>
+              <div class="content">
+                <iframe id="googleMap"
+                    width="102%"
+                    height="450"
+                    frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/search?key=AIzaSyClFZgU_nLZ7QpoqQC_IvIizDwaNpYsYsU
+                    &q=grocery" allowfullscreen>
+                </iframe>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification is-success">
+            <div class="content">
+              <p class="title">Recipes</p>
+              <p class="title is-5">So many options!!</p>
+              <div id="recipes">
+                <!-- Content -->
+              
+            </div>
+          </div></article>
+        </div>
+      </div>
+    
+    </div>
+    </div>
+
+    <hr><div class="level" data-config-id="steps">
+    <div class="level-item">
+      <div class="number">1</div>
+      <h4 class="title is-4">Let's Get Started</h4>
+    </div>
+    <div class="level-item">
+      <div class="number has-background-primary">2</div>
+      <h4 class="title is-4">Select Your Ingredients</h4>
+    </div>
+  </div>
+    
+  <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <script defer="" src="./Meal Finder Home_files/all.js.download"></script>
+  <script src="./missing-ingr.js"></script>
+​
+  <script src="index.js"></script>
+    </body></html>
